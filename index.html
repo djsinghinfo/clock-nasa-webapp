@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clock with Nasa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="sideDiv" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div id="settingBody"></div>
+    </div>
+
+    <div class="bodyDiv" id="bodyDiv">
+      <span style="font-size: 30px; cursor: pointer" onclick="openNav()"><i class="fa fa-gear fa-spin"></i></span>
+
+      <h2 class="center" id="title"></h2>
+      <h3 class="center" id="timeFull"></h2>
+      <h3 class="center" id="time"></h2>
+      <h3 class="center" id="date"></h2>
+      <h5 class="center" id="titleApi"></h5>
+
+      <div class="text-center">
+        <button type="submit" id="moreBtn" class="btn btn-info">More</button>
+        <div id="moreData">
+          <div class="moreData">
+            <span>Month of the Year : <span id="m_getMonthOfTheYear"></span></span>
+            <span>Day of the Month : <span id="m_getDate"></span></span>
+            <span>Day of the Week: <span id="m_getWeekDayName"></span></span>
+            <span>Week of the Year : <span id="m_getWeekOfTheYear"></span></span>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
